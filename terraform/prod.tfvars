@@ -1,0 +1,5 @@
+environment = "prod"
+region      = "sa-east-1"
+bucket_name = "hellohippo-prod"
+zone_id     = "ZYYYYYYYYYYYYY"
+domain_name = "www.hellohippo.com"
