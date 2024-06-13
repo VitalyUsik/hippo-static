@@ -29,9 +29,5 @@ jobs:
       run: cd terraform && terraform init
 
     - name: Terraform Apply (Dev)
-      if: github.ref == 'refs/heads/dev'
-      run: cd terraform && terraform apply -var-file="dev.tfvars" -auto-approve
-
-    - name: Terraform Apply (Prod)
       if: github.ref == 'refs/heads/main'
-      run: cd terraform && terraform apply -var-file="prod.tfvars" -auto-approve
+      run: cd terraform && terraform apply -var-file="dev.tfvars" -auto-approve
